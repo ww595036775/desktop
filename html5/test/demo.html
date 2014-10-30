@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+<!--
+.path {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: dash 10s linear alternate infinite;
+}-->
+
+.breakword
+{word-wrap:break-word;
+text-shadow: 5px 5px 5px #FF0000;
+}
+
+
+</style>
+<link href="video-js.css" rel="stylesheet">
+<script src="video.js"></script>
+<script>
+    videojs.options.flash.swf = "video-js.swf";
+ </script>
+</head>
+
+<body>
+<input id="range" type="range" min="5" max="25" value="5" onchange="change()"/>
+<span id="value">5</span>
+<script type='text/javascript'>
+function change() {
+  var value = document.getElementById('range').value ;
+  document.getElementById('value').innerHTML = value;
+  alert(",json格式:"+localStorage.getItem("I001"));
+}
+</script>
+<input type="color" />
+ 
+<!--
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500"  xml:space="preserve">
+
+ 
+
+
+<path  class="path" d="M62.9 14.9c-25-7.74-56.6 4.8-60.4 24.3-3.73 19.6 21.6 35 39.6 37.6 42.8 6.2 72.9-53.4 116-58.9 65-18.2 191 101 215 28.8 5-16.7-7-49.1-34-44-34 11.5-31 46.5-14 69.3 9.38 12.6 24.2 20.6 39.8 22.9 91.4 9.05 102-98.9 176-86.7 18.8 3.81 33 17.3 36.7 34.6 2.01 10.2.124 21.1-5.18 30.1" 
+stroke="#000" stroke-width="4.3" fill="none" style="-webkit-transition: stroke-dashoffset 2s ease-in-out; transition: stroke-dashoffset 2s ease-in-out; stroke-dasharray: 988.0062255859375px, 988.0062255859375px; stroke-dashoffset: 0px;"></path>
+
+ <path class="path" fill="#FFFFFF" stroke="red" stroke-width="4"  d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+	s30,41,53,27s66,4,58,32s-5,44,18,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+	C46.039,146.545,53.039,128.545,66.039,133.545z">
+	<animate attributeName="stroke-dashoffset" attributeType="auto" begin="0s" dur="6s" fill="freeze" from="0" to="1000"/> 
+	</path>
+	
+	<path stroke="#000000" fill="none" pointer-events="visibleStroke" d="M 240 260 L 240 230 C 240 210 240,210 260 210 L 320 210 C 340 210 340,210 340 190 L 340 160 " stroke-width="8" style="cursor: move;">
+		
+	</path>
+
+
+<path fill="none" stroke="white" d="M 240 260 L 240 230 C 240 210 240,210 260 210 L 320 210 C 340 210 340,210 340 190 L 340 160 " stroke-width="5"></path>
+
+<path  stroke-dasharray="10"  fill="none" stroke="#000000" stroke-width="2"  d="M 240 260 L 240 230 C 240 210 240,210 260 210 L 320 210 C 340 210 340,210 340 190 L 340 160">
+	<animate attributeName="stroke-dashoffset" attributeType="auto" begin="0s" dur="6s" fill="freeze" from="500" to="1" repeatCount="indefinite"/> 
+	
+	</path> 
+
+</svg>
+-->
+<!--autoplay="autoplay"-->
+<!--
+<video width="500" height="300" controls  > 
+   
+   <source src="Phonebloks.mp4" type="video/mp4" />  
+    如果浏览器不支持video标签，则使用flash 
+   <embed src="http://blip.tv/play/gcMVgcmBAgA%2Em4v" type="application/x-shockwave-flash"  
+width="1024" height="798" allowscriptaccess="always" allowfullscreen="true"> </embed> 
+</video> 
+ -->  
+
+
+
+<video id="example_video_1" autoplay="autoplay" class="video-js vjs-default-skin" controls preload="none" width="500" height="264"
+      
+      data-setup="{}">
+ <source src="Phonebloks.mp4" type='video/mp4'>
+  <track kind="captions" src="demo.captions.vtt" srclang="en" label="中文" ></track><!-- Tracks need an ending tag thanks to IE9 -->
+   
+</video>
+
+
+
+<br/>
+<audio controls="controls">  
+  
+   <source src="王.mp3" /> 
+   
+   <source src="music1.mp3" /> 
+</audio> 
+
+<input list="Country">
+<datalist id="Country">
+  <option value="India">
+  <option value="Italy">
+  <option value="Iran">
+  <option value="Israel">
+  <option value="Indonesia">
+</datalist>
+<input type="search" name="googleengine">
+<input type="time" name="usr_time">
+<input type="tel" name="mytel">
+
+<form onsubmit="return false"  oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+  <input name="a" type="number"> +
+  <input name="b" type="number"> =
+  <output name="o" />
+</form>
+
+<div class="breakword">大大大大大大地方纷纷大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大大的</div>
+
+<input type="date" name="bday"/>
+</body>
+</html>

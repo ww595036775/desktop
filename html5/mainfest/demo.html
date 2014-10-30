@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html manifest="demo.manifest"> 
+
+	<head>
+		<meta charset="UTF-8">
+		<title> ****返回顶部****</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		
+	<style type="text/css">
+	
+	
+ 
+        /**css**/
+        .ani{
+          width:480px;
+          height:320px;
+          margin:50px auto;
+          overflow: hidden;
+          box-shadow:0 0 5px rgba(0,0,0,1);
+		  border-radius:25px;// 添加圆角 
+          background-size: cover;
+          background-position: center;
+          -webkit-animation-name: "loops";
+          -webkit-animation-duration: 20s;
+          -webkit-animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes "loops" {
+            0% {
+                background:url(http://d.hiphotos.baidu.com/image/w%3D400/sign=c01e6adca964034f0fcdc3069fc27980/e824b899a9014c08e5e38ca4087b02087af4f4d3.jpg) no-repeat;             
+            }
+            25% {
+                background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=edee1572e9f81a4c2632edc9e72b6029/30adcbef76094b364d72bceba1cc7cd98c109dd0.jpg) no-repeat;
+            }
+            50% {
+                background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=937dace2552c11dfded1be2353266255/d8f9d72a6059252d258e7605369b033b5bb5b912.jpg) no-repeat;
+            }
+            75% {
+                background:url(http://g.hiphotos.baidu.com/image/w%3D400/sign=7d37500b8544ebf86d71653fe9f9d736/0df431adcbef76095d61f0972cdda3cc7cd99e4b.jpg) no-repeat;
+            }
+            100% {
+                background:url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb239ceb0fb43161a1f7b7a10a54642/3b87e950352ac65ce2e73f76f9f2b21192138ad1.jpg) no-repeat;
+            }
+        }
+	</style>
+	</head>
+	<body>
+	<div class="ani"></div>
+	dadada</br>
+	dadada</br>d222222222222222222222222222</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>dadada</br>
+	<div id="full-top" style="position:fixed; left:50%; top:520px; margin-left:475px; z-index:100; text-align:center; cursor:pointer;">
+<a><img src="http://blog.jobbole.com/wp-content/themes/jobboleblogv3/_assets/img/back-top.png" width="20" border="0" alt="返回顶部" title="返回顶部"></a>
+</div>
+	<script type="text/javascript">
+$('#full-top').click(function(){
+    $('html, body').animate({scrollTop:0}, 'slow');
+	
+	var country = {};
+	country.name = "India";
+	country.code = "I001";
+	localStorage.setItem("I001", JSON.stringify(country));
+	localStorage.setItem("hello", "飞一般的黑客");
+	var str = localStorage.getItem("hello");
+	alert("本地储存："+str+",json格式:"+localStorage.getItem("I001"));
+	//会话（事件）储存
+	if(sessionStorage.clickcount)
+	{
+		sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+	}
+	else
+	{
+		sessionStorage.clickcount = 0;
+	}
+	
+	alert(sessionStorage.clickcount);
+    return false;
+});
+
+
+
+</script>
+</body>
+</html>

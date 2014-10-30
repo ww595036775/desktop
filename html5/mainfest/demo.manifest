@@ -1,0 +1,15 @@
+﻿CACHE MANIFEST
+# VERSION
+
+# 直接缓存的文件d
+CACHE:
+m.js
+m1.js
+
+# 需要在时间在线的文件
+NETWORK:
+cache.html 
+
+# 替代方案
+FALLBACK:
+#/ajax/ ajax.html
